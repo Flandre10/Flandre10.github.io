@@ -1,0 +1,163 @@
+/* 保持居中布局 */
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* 原始图片 */
+img[src="shin-chan-banner.jpg"] {
+  width: 650px;
+  height: 250px;
+}
+
+img[src="naughtiest-son.jpg"] {
+  width: 250px;
+  height: 250px;
+}
+
+/* 视频 */
+video {
+  width: 700px;
+  height: 450px;
+
+}
+
+/* 标题样式 */
+.header {
+  background-color: rgb(22, 22, 109);   
+  color: white;            
+  padding: 10px;           
+  text-align: center;       /* 文字居中显示 */
+}
+
+/* 导航链接样式 */
+.nav-links a {
+  margin: 0 16px;
+  color: red;
+  text-decoration: underline;
+  background-color: pink; 
+
+}
+a:hover {
+  background: none;
+}
+
+
+/* 角色部分整体样式 */
+#characters-section {
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  background-image: url("beijing2.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+.section-title {
+  margin: 0 0 15px 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.characters-container {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* 角色行样式 */
+.character-row {
+  display: block;
+  margin: 0 0 10px 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* 清除最后一行的底部边距 */
+.character-row:last-child {
+  margin-bottom: 0;
+}
+
+/* 角色卡片样式 */
+.character-card {
+  display: inline-block;
+  width: 19%;
+  margin: 0 3.5%;
+  padding: 10px;
+  vertical-align: top;
+  border: 1px solid #eee;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.character-card strong {
+  display: block;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+.character-card img {
+  display:inline-table;
+  margin: 0 auto 10px auto;
+  max-width: 80%;
+  height: auto;
+}
+
+.character-card small {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8em;
+  line-height: 1.1;
+}
+
+/* 表单容器 */
+form {
+  width: fit-content;     /* 根据内容自适应宽度 */
+  margin: 0 auto;         /* 水平居中 */
+  padding: 20px;          
+  background-image: url("beijing.jpeg");
+  
+  background-size: cover;
+}
+
+/* 表单组 */
+.form-group {
+  display: flex;
+  margin: 10px;
+  align-items: center;    /* 垂直居中 */
+}
+
+/* 标签与输入框 */
+.form-group label {
+  min-width: 120px;       /* 固定标签宽度 */
+  text-align: left;       /* 文字左对齐 */
+  margin-right: 10px;    
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  flex: 1;               
+  max-width: 300px;      
+}
+
+
+
+/* 页脚样式 */
+footer {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+footer a {
+  color: #0000EE;
+  text-decoration: underline;
+}
